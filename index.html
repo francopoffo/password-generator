@@ -10,8 +10,8 @@
   <body>
     <div class="container">
       <h1 class="title">Gerador de senhas</h1>
-      <h3 class="password__display">senha</h3>
-      <form class="form">
+      <h3 class="password__display" id="passwordDisplay"></h3>
+      <form class="form" id="form">
         <label for="characterAmountNumber">Número de caracteres</label>
         <div class="character__amount">
           <input
@@ -31,14 +31,15 @@
           />
         </div>
         <label for="inclueUppercase">Incluir letra maíuscula</label>
-        <input type="checkbox" id="inclueUppercase" />
+        <input type="checkbox" id="includeUppercase" />
         <label for="inclueNumbers">Incluir números</label>
-        <input type="checkbox" id="inclueNumbers" />
+        <input type="checkbox" id="includeNumbers" />
         <label for="inclueSymbols">Incluir símbolos</label>
-        <input type="checkbox" id="inclueSymbols" />
+        <input type="checkbox" id="includeSymbols" />
 
         <button class="btn" type="submit">Gerar senha</button>
       </form>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
