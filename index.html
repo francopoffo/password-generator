@@ -4,29 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Gerador de senhas</title>
   </head>
   <body>
-    <div>
-      <h1>Gerador de senhas</h1>
-      <h3>senha</h3>
-      <form action="">
+    <div class="container">
+      <h1 class="title">Gerador de senhas</h1>
+      <h3 class="password__display">senha</h3>
+      <form class="form">
         <label for="characterAmountNumber">Número de caracteres</label>
-        <input
-          type="range"
-          min="1"
-          max="50"
-          value="10"
-          id="characterAmountRange"
-        />
-        <input
-          type="number"
-          min="1"
-          max="50"
-          value="10"
-          id="characterAmountNumber"
-        />
-
+        <div class="character__amount">
+          <input
+            type="range"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountRange"
+          />
+          <input
+            class="number__input"
+            type="number"
+            min="1"
+            max="50"
+            value="10"
+            id="characterAmountNumber"
+          />
+        </div>
         <label for="inclueUppercase">Incluir letra maíuscula</label>
         <input type="checkbox" id="inclueUppercase" />
         <label for="inclueNumbers">Incluir números</label>
@@ -34,7 +37,7 @@
         <label for="inclueSymbols">Incluir símbolos</label>
         <input type="checkbox" id="inclueSymbols" />
 
-        <button type="submit">Gerar senha</button>
+        <button class="btn" type="submit">Gerar senha</button>
       </form>
     </div>
   </body>
